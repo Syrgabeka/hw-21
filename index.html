@@ -11,10 +11,26 @@
       ON
     </button>
     <hr />
+
+    <input
+      class="input"
+      type="text"
+      onkeyup="if(event.code === 'Enter'){vuvod()}"
+    />
+    <button onclick="vuvod()">Submit</button>
+    <p class="text">Your name:</p>
     <hr />
-    <input class="input" type="text" />
-    <button onclick="vuvod()" class="submit">Submit</button>
-    <p class="text"></p>
+
+    <input class="writer" type="text" oninput="showText()" />
+    <p class="notebook"></p>
+    <hr />
+
+    <button onclick="nazhmi(1)">1</button>
+    <button onclick="nazhmi(2)">2</button>
+    <button onclick="nazhmi(3)">3</button>
+    <button onclick="nazhmi(4)">+</button>
+
+    <p class="number"></p>
 
     <script src="./script.js"></script>
   </body>
